@@ -1,0 +1,52 @@
+{
+  "Records": [
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "some_partition_key",
+        "sequenceNumber": "49561248805737405226755593691918241865509837490266046466",
+        "data": "eyJteV9rZXkiOiAibXlfdmFsdWUifQ==",
+        "approximateArrivalTimestamp": 1461254626.271
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000000:49561248805737405226755593691918241865509837490266046466",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::1234:role/myrole",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:1234:stream/myKinesisStream"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "some_partition_key",
+        "sequenceNumber": "49561248805737405226755593691919450791329452119440752642",
+        "data": "eyJteV9rZXkiOiAibXlfdmFsdWUifQ==",
+        "approximateArrivalTimestamp": 1461254626.376
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000000:49561248805737405226755593691919450791329452119440752642",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::1234:role/myrole",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:1234:stream/myKinesisStream"
+    },
+    {
+      "kinesis": {
+        "kinesisSchemaVersion": "1.0",
+        "partitionKey": "some_other_partition_key",
+        "sequenceNumber": "49561248805737405226755593691920659717149066748615458818",
+        "data": "eyJteV9rZXkiOiAibXlfdmFsdWUifQ==",
+        "approximateArrivalTimestamp": 1461254626.401
+      },
+      "eventSource": "aws:kinesis",
+      "eventVersion": "1.0",
+      "eventID": "shardId-000000000000:49561248805737405226755593691920659717149066748615458818",
+      "eventName": "aws:kinesis:record",
+      "invokeIdentityArn": "arn:aws:iam::1234:role/myrole",
+      "awsRegion": "us-east-1",
+      "eventSourceARN": "arn:aws:kinesis:us-east-1:1234:stream/myKinesisStream"
+    }
+  ]
+}

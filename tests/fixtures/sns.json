@@ -1,0 +1,22 @@
+{
+  "Records": [
+    {
+      "EventSource": "aws:sns",
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:us-east-1:12345:myTopic:12345",
+      "Sns": {
+        "Type": "Notification",
+        "MessageId": "bd501c69-8a5f-53af-900f-535272206b6e",
+        "TopicArn": "arn:aws:sns:us-east-1:12345:myTopic",
+        "Subject": "Some subject",
+        "Message": "{\"myKey\":\"myValue\"}",
+        "Timestamp": "2016-02-15T16:01:03.230Z",
+        "SignatureVersion": "1",
+        "Signature": "Dawc5W1BaiKy7IDHcrja6os9eHmIXVmArQ6OKG9zVP+C+gfklg9nwxqhQEdOoXvrRntoQDp+RQjFF8ClELLXMguvrFd/Icet1b2xWdgtCnZQrUTsa+QH+wsrxe44q4zqX4OG5kM1TTH4CslJ4ifQ+MKjxfCkuS79tTcgXLQmVE9/y7RaAkT8ASX4Nv7LpSBxyxc5iAQfdomNe6G/SwpZ21JoxKiRVpAWlyofj76nPqa9FSPEzPZZ80E8/kjUsDbA8KcOzlwh6dvRsVQCviX9om3TvgP7Xa7wvnbtN+2XjQYbrCZA2WwyHm0XkC+1m/s3B6/2bcDlJkuLbOc0vs8u8w==",
+        "SigningCertUrl": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-bb750dd426d95ee9390147a5624348ee.pem",
+        "UnsubscribeUrl": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:12345:myTopic:12345",
+        "MessageAttributes": {}
+      }
+    }
+  ]
+}
