@@ -4,11 +4,17 @@
   "description": "Converts various aws events to objects",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests/",
+    "lint": "eslint . || true"
   },
   "keywords": [
     "aws"
   ],
   "author": "David Garcia, Alua Kinzhebayeva",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.8.0",
+    "mocha": "^2.4.5"
+  }
 }
