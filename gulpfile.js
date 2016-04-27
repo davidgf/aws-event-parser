@@ -1,23 +1,22 @@
-var gulp = require('gulp');
-var fs = require("fs");
-var browserify = require("browserify");
-var babelify = require("babelify");
-var source = require('vinyl-source-stream');
-var gutil = require('gulp-util');
+var gulp = require('gulp'),
+	del = require('del'),
+	babel = require('gulp-babel');
 
+var SRC_PATH = './src',
+	LIB_PATH = './lib';
 
-gulp.task('es6', function() {
-	browserify({ debug: true })
-		.transform(babelify)
-		.require("./lib/index.js", { entry: true })
-		.bundle()
-		.on('error',gutil.log)
-		.pipe(source('./dist/aws-event-parser.js'))
-    	.pipe(gulp.dest('./'));
+gulp.task('clear', function(cb) {
+	del([ LIB_PATH + '/*' ], function() {
+		cb();
+	});
 });
 
-gulp.task('watch',function() {
-	gulp.watch(['./**/*.js'],['es6'])
+gulp.task('build', [ 'clear' ], function() {
+	return gulp.src([ SRC_PATH + '/**/*.js' ])
+				.pipe(babel({ blacklist: [ 'useStrict' ] }))
+				.pipe(gulp.dest(LIB_PATH));
 });
 
-gulp.task('default', ['es6','watch']);
+gulp.task('default', function() {
+	gulp.start('build');
+});

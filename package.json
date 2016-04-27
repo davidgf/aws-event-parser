@@ -1,11 +1,11 @@
 {
   "name": "aws-event-parser",
   "version": "1.0.0",
-  "description": "Converts various aws events to plain JavaScript object",
-  "main": "index.js",
+  "description": "Utility that converts various aws events to plain JavaScript object",
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/microapps/aws-event-parser.git"
   },
   "scripts": {
     "gulp": "gulp",
@@ -33,7 +33,7 @@
     "mocha": "^2.4.5",
     "browserify": "13.0.0",
     "gulp": "3.9.1",
-    "gulp-util": "3.0.7",
-    "vinyl-source-stream": "1.1.0"
+    "del": "^1.1.1",
+    "gulp-babel": "^5.1.0"
   }
 }
