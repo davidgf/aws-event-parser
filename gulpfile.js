@@ -12,7 +12,7 @@ gulp.task('es6', function() {
 		.require("./lib/index.js", { entry: true })
 		.bundle()
 		.on('error',gutil.log)
-		.pipe(source('./dist/bundle.js'))
+		.pipe(source('./dist/aws-event-parser.js'))
     	.pipe(gulp.dest('./'));
 });
 

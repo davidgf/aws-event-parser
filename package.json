@@ -2,7 +2,7 @@
   "name": "aws-event-parser",
   "version": "1.0.0",
   "description": "Converts various aws events to plain JavaScript object",
-  "main": "dist/build.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": ""
