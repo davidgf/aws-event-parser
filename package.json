@@ -1,9 +1,14 @@
 {
   "name": "aws-event-parser",
-  "version": "1.0",
-  "description": "Converts various aws events to objects",
-  "main": "lib/index.js",
+  "version": "1.0.0",
+  "description": "Converts various aws events to plain JavaScript object",
+  "main": "dist/build.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "scripts": {
+    "gulp": "gulp",
     "test": "mocha --require babel-register tests/",
     "lint": "eslint . || true"
   },
@@ -25,6 +30,10 @@
     "babelify": "^7.2.0",
     "chai": "^3.5.0",
     "eslint": "^2.8.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "browserify": "13.0.0",
+    "gulp": "3.9.1",
+    "gulp-util": "3.0.7",
+    "vinyl-source-stream": "1.1.0"
   }
 }
