@@ -1,6 +1,6 @@
 {
   "name": "aws-event-parser",
-  "version": "0.1.1",
+  "version": "1.0",
   "description": "Converts various aws events to objects",
   "main": "lib/index.js",
   "scripts": {
@@ -8,7 +8,13 @@
     "lint": "eslint . || true"
   },
   "keywords": [
-    "aws"
+    "aws",
+    "parser",
+    "s3",
+    "dynamodb",
+    "sns",
+    "kinesis",
+    "aws event parser"
   ],
   "author": "David Garcia, Alua Kinzhebayeva",
   "license": "ISC",
