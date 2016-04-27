@@ -1,0 +1,56 @@
+{
+    "Records": [
+        {
+            "eventID": "e39e62d427ab91a0fc6a03f73fd48193",
+            "eventName": "MODIFY",
+            "eventVersion": "1.0",
+            "eventSource": "aws:dynamodb",
+            "awsRegion": "us-east-1",
+            "dynamodb": {
+                "Keys": {
+                    "id": {
+                        "S": "f215c070-0787-11e6-a51d-db5f486cf84f"
+                    }
+                },
+                "NewImage": {
+                    "createdAt": {
+                        "S": "Thu Apr 21 2016 06:11:54 GMT+0000 (UTC)"
+                    },
+                    "isDeleted": {
+                        "S": "false"
+                    },
+                    "id": {
+                        "S": "f215c070-0787-11e6-a51d-db5f486cf84f"
+                    },
+                    "listName": {
+                        "S": "Updated name"
+                    },
+                    "userId": {
+                        "S": "12345"
+                    }
+                },
+                "OldImage": {
+                    "createdAt": {
+                        "S": "Thu Apr 21 2016 06:11:54 GMT+0000 (UTC)"
+                    },
+                    "isDeleted": {
+                        "S": "false"
+                    },
+                    "id": {
+                        "S": "f215c070-0787-11e6-a51d-db5f486cf84f"
+                    },
+                    "listName": {
+                        "S": "Original name"
+                    },
+                    "userId": {
+                        "S": "12345"
+                    }
+                },
+                "SequenceNumber": "8262800000000003493530502",
+                "SizeBytes": 319,
+                "StreamViewType": "NEW_AND_OLD_IMAGES"
+            },
+            "eventSourceARN": "arn:aws:dynamodb:us-east-12345:table/TableName/stream/2016-04-22T11:05:53.033"
+        }
+    ]
+}
